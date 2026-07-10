@@ -10,31 +10,33 @@
 </head>
 
 <body class="bg-purple-300">
-    <div class="flex flex-col lg:flex-row w-70 lg:w-200 h-100 ml-6 lg:ml-90 mt-30 border-2 border-white rounded-2xl">
-        <div class="flex items-center flex-col w-69 lg:w-100 h-99 border-4 border-blue-300 bg-blue-300 rounded-tl-2xl rounded-tr-2xl lg:rounded-l-2xl">
+    <div class="flex flex-col lg:flex-row w-70 lg:w-200 h-100 ml-6 lg:ml-90 mt-30 mb-95 lg:mb-0 border-2 border-white rounded-2xl">
+        <div class="flex items-center flex-col w-69 lg:w-100 h-100 border-4 border-blue-300 bg-blue-300  rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none">
             <h1 class="text-3xl font-bold items-center text-white">
                 Result Display </h1>
             <h1 class="text-xl px-10 py-2 mt-6 border-white border-3 text-black rounded-2xl bg-white">Umaima zainab</h1>
             <p class="text-xl  px-21 py-2 mt-6 border-3 border-white rounded-2xl text-black bg-white">1036</p>
             <h1 class="text-xl px-14 py-2 mt-6 border-white border-3 text-black rounded-2xl bg-white">Total marks</h1>
-            <h1 class="text-xl px-20 py-2 mt-6 border-white border-3 text-black rounded-2xl bg-amber-300">Status</h1>
+            <h1 class="text-xl px-20 py-2 mb-8 lg:mb-0 mt-6 border-white border-3 text-black rounded-2xl bg-amber-300">Status</h1>
         </div>
-        <div class="flex items-center flex-col justify-center w-69 lg:w-100 h-100 pt-8 lg:pt-2 bg-white  lg:rounded-r-2xl">
-            <div class="flex items-center gap-0 lg:gap-4 ">
-                <label for="english" class="text-xl font-semibold">English:</label>
-                <input type="number" id="english" class="w-40 lg:w-40 border rounded-xl px-1 lg:px-3 py-2 bg-amber-50">
+        <div class="flex items-center flex-col justify-center w-69.5 lg:w-100 h-100 pt-8 lg:pt-2 bg-white  rounded-b-2xl
+lg:rounded-r-2xl
+lg:rounded-bl-none border-amber-50">
+            <div id="english" class="flex items-center gap-0 lg:gap-4 ">
+                <label for="english" class="text-md lg:text-xl font-semibold">English:</label>
+                <input type="number" id="english" class="w-40 lg:w-40 border-2 border-purple-400 rounded-xl ml-5 lg:ml-0  px-1 lg:px-3 py-2 bg-amber-50">
             </div>
 
-            <div class="flex items-center gap-0 lg:gap-4 ">
-                <label for="math" class="text-xl font-semibold ml-5">Math:</label>
-                <input type="number" id="math" class="w-40 lg:w-40 border-2 rounded-xl px-1 lg:px-3 py-2 m-5 bg-amber-50">
+            <div id="math" class="flex items-center gap-0 lg:gap-4 ">
+                <label for="math" class="text-md lg:text-xl font-semibold ml-5">Math:</label>
+                <input type="number" id="math" class="w-40 lg:w-40 border-2 border-purple-400 rounded-xl ml-8 lg:ml-0 px-1 lg:px-3 py-2 m-5 bg-amber-50">
             </div>
 
-            <div class="flex items-center gap-0 lg:gap-4 ">
-                <label for="computer" class="text-md lg:text-xl font-semibold ">Computer:</label>
-                <input type="number" id="computer" class="w-40 lg:w-40  border-2 rounded-xl px-1 lg:px-3 py-2 bg-amber-50 mr-7">
+            <div id="computer" class="flex items-center gap-0 lg:gap-4 ">
+                <label for="computer" class="text-md lg:text-xl ml-4 lg:ml-0 font-semibold ">Computer:</label>
+                <input type="number" id="computer" class="w-40 lg:w-40  border-2 border-purple-400 rounded-xl ml-2 lg:ml-0 px-1 lg:px-3 py-2 bg-amber-50 mr-7">
             </div>
-            <h1 class="text-xl px-10 py-2 mt-12 ml-2  text-blue border-3 border-amber-50 rounded-3xl bg-emerald-500 hover:bg-emerald-600 ">Calculte result</h1>
+            <h1 id="calculate" class="text-xl px-10 py-2 mt-12 ml-2 mb-6 lg:mb-0 text-blue border-3 border-amber-50 rounded-3xl bg-emerald-500 hover:bg-emerald-600 ">Calculte result</h1>
         </div>
     </div>
     <script src="app.js"></script>
